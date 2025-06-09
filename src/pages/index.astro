@@ -1,72 +1,61 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-
-<section id="inicio" class="hero">
-  <img src="/perfil.jpg" alt="Foto de Jesús" class="hero-img" />
-  <div class="hero-text">
-    <h1>Jesús</h1>
-    <p>Desarrollador web apasionado por crear experiencias digitales modernas, rápidas y accesibles.</p>
-  </div>
-</section>
-<section id="about" class="about">
-  <h2>Sobre mí</h2>
-  <p>
-    Soy un desarrollador web apasionado por crear sitios rápidos, accesibles y bien diseñados. Me encanta aprender nuevas tecnologías y aplicarlas a proyectos reales.
-  </p>
-</section>
-<!-- Habilidades -->
-<section id="skills" class="skills">
-  <h2>Habilidades</h2>
-  <div class="skills-grid">
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
-    <div>Astro</div>
-    <div>React</div>
-    <div>Git</div>
-    <div>Tailwind</div>
-    <div>Node.js</div>
-  </div>
-</section>
-
-<!-- Proyectos -->
-<section id="projects" class="projects">
-  <h2>Proyectos</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Portfolio</h3>
-      <p>Mi portfolio personal hecho con Astro, HTML y CSS.</p>
-      <a href="https://github.com/tuusuario/portfolio" target="_blank">Ver código</a>
+  <section id="inicio" class="hero">
+    <div class="hero-bg" style="background: linear-gradient(to right,#f9f9fb 20%,#ffffff57  ,#f9f9fb 80%)"></div>
+    <img src="/perfil2.jpg" alt="Antonio Jesús Blanco Guillen" class="hero-img" />
+    <div class="hero-text">
+      <h1>Antonio Jesús Blanco Guillén</h1>
+      <p>Front-End Developer | Javascript & React | Astro | Diseñador UI</p>
     </div>
-    <div class="project-card">
-      <h3>App de tareas</h3>
-      <p>Una aplicación simple para gestionar tareas, hecha con React y Firebase.</p>
-      <a href="https://github.com/tuusuario/todo-app" target="_blank">Ver código</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy desarrollador front-end con pasión por crear experiencias web bonitas, funcionales y accesibles.
+      Disfruto trabajando con tecnologías modernas como JavaScript, React y Astro para construir interfaces limpias y rápidas.
+    </p>
+  </section>
+<div>
+  <section id="skills" class="skills" >
+    <h2>Habilidades</h2>
+    <div class="skills-grid" >
+      <div>JavaScript</div>
+      <div>React</div>
+      <div>Astro</div>
+      <div>CSS</div>
+      <div>HTML</div>
+      <div>UI Design</div>
+      <div>Git</div>
+      <div>Figma</div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
+  <section id="projects" class="projects">
+    <h2>Proyectos</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3 class="project-title">Portfolio Personal</h3>
+        <p class="project-description">
+          Mi portfolio personal construido con Astro, con diseño responsivo y animaciones.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/tu-usuario/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://tu-portfolio.com" target="_blank" rel="noopener noreferrer">Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<!-- Contacto -->
-<section id="contact" class="contact">
-  <h2>Contacto</h2>
-  <p>Puedes escribirme a <a href="mailto:tucorreo@gmail.com">tucorreo@gmail.com</a> o encontrarme en redes:</p>
-  <ul class="social-links">
-    <li><a href="https://github.com/tuusuario" target="_blank">GitHub</a></li>
-    <li><a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></li>
-  </ul>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2025 Jesús – Todos los derechos reservados.</p>
-</footer>
-
-
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>Estoy abierto a nuevas oportunidades y colaboraciones. ¡Hablemos!</p>
+    <p>Email: <a href="mailto:jesusblanco@hotmail.com">jesusblanco@hotmail.com</a></p>
+    <p>Teléfono: <a href="tel:+34617084737">+34 617 08 47 37</a></p>
+  </section>
+  <button id="back-to-top" title="Volver arriba" aria-label="Volver arriba">↑</button>
 
 </Layout>
