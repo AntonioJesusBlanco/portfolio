@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,5 +6,67 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+
+<section id="inicio" class="hero">
+  <img src="/perfil.jpg" alt="Foto de Jesús" class="hero-img" />
+  <div class="hero-text">
+    <h1>Jesús</h1>
+    <p>Desarrollador web apasionado por crear experiencias digitales modernas, rápidas y accesibles.</p>
+  </div>
+</section>
+<section id="about" class="about">
+  <h2>Sobre mí</h2>
+  <p>
+    Soy un desarrollador web apasionado por crear sitios rápidos, accesibles y bien diseñados. Me encanta aprender nuevas tecnologías y aplicarlas a proyectos reales.
+  </p>
+</section>
+<!-- Habilidades -->
+<section id="skills" class="skills">
+  <h2>Habilidades</h2>
+  <div class="skills-grid">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Astro</div>
+    <div>React</div>
+    <div>Git</div>
+    <div>Tailwind</div>
+    <div>Node.js</div>
+  </div>
+</section>
+
+<!-- Proyectos -->
+<section id="projects" class="projects">
+  <h2>Proyectos</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Portfolio</h3>
+      <p>Mi portfolio personal hecho con Astro, HTML y CSS.</p>
+      <a href="https://github.com/tuusuario/portfolio" target="_blank">Ver código</a>
+    </div>
+    <div class="project-card">
+      <h3>App de tareas</h3>
+      <p>Una aplicación simple para gestionar tareas, hecha con React y Firebase.</p>
+      <a href="https://github.com/tuusuario/todo-app" target="_blank">Ver código</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contact" class="contact">
+  <h2>Contacto</h2>
+  <p>Puedes escribirme a <a href="mailto:tucorreo@gmail.com">tucorreo@gmail.com</a> o encontrarme en redes:</p>
+  <ul class="social-links">
+    <li><a href="https://github.com/tuusuario" target="_blank">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 Jesús – Todos los derechos reservados.</p>
+</footer>
+
+
+
 </Layout>
