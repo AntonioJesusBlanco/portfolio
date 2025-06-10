@@ -18,7 +18,7 @@ html, body {
   position: fixed;
   top: 0; left: 0; width: 100%;
   background: transparent;
-  display: flex; justify-content: space-between; align-items: center;
+  display: flex; justify-content: space-around; align-items: center;
   padding: 1.3rem 5rem;
   z-index: 1000;
   transition: background-color 0.2s ease, padding 0.2s ease, box-shadow 0.2s ease;
@@ -65,7 +65,7 @@ main {
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 8rem 5rem 8rem;
+    padding: 8rem 5rem 13rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -75,8 +75,8 @@ main {
     background-color: #FFFFFF;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    box-shadow: 0 3px 25px rgb(193, 187, 248);
-    max-height: 700px;
+    box-shadow: 0 4px 25px #d7acff7e;
+    max-height: 800px;
     margin-bottom: 4rem;
 }
 .hero-bg {
@@ -96,40 +96,39 @@ main {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #4e4eff;
+  border: 2px solid #d7acff7e;
   transition: transform 0.5s ease;
-  box-shadow: 0 1px 20px rgba(55, 55, 255, 0.8);
+  box-shadow: 0 1px 20px #d7acff7e;
 }
 .hero-img:hover {
   transform: scale(1.15);
+  transition: all 0.5s ease;
 }
 .hero-text {
   position: relative;
   z-index: 1;
-  max-width: 480px;
   color: #000000;
 }
 .hero-text h1 {
-  font-size: 3.2rem;
+font-size: 3.2rem;
   margin-bottom: 1rem;
 }
 .hero-text p {
-  font-size: 1.3rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.5;
   color: #000000;
 }
 
 /* Sections */
 section {
-    padding: 20px;
+  padding: 20px;
   margin-bottom: 4rem;
   opacity: 0;
   transform: translateY(70px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.1s ease;
 }
 section.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 h2 {
   font-size: 2.8rem;
@@ -146,7 +145,7 @@ h2 {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 1px 25px rgb(193, 187, 248);
+    box-shadow: 0 4px 25px #d7acff7e;
   color: #000000;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -157,7 +156,7 @@ h2 {
   background: #FFFFFF;
   padding: 3rem 2rem;
   border-radius: 14px;
-  box-shadow: 0 1px 25px rgb(193, 187, 248);
+    box-shadow: 0 4px 25px #d7acff7e;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -168,17 +167,21 @@ h2 {
   gap: 1.2rem;
 }
 .skills-grid div {
-  background: #4e4eff;
+  background: #af5bfd7e;
   color: white;
   padding: 1rem 0;
   border-radius: 12px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.1rem;
-  box-shadow: 0 4px 15px rgba(78, 78, 255, 0.3);
+  border: #c48df894 solid 1px;
+  box-shadow: 0 0px 4px #8400ff;
   cursor: default;
 }
 .skills-grid div:hover {
-  background-color: #3636b8;
+  background-color: #8400ff7e;
 }
 
 /* Projects */
@@ -186,7 +189,7 @@ h2 {
   padding: 3rem 2rem;
   background-color: #ffffff;
   border-radius: 14px;
-  box-shadow: 0 1px 25px rgb(193, 187, 248);
+    box-shadow: 0 4px 25px #d7acff7e;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -200,13 +203,13 @@ h2 {
   background: #FFFFFF;
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(78, 78, 255, 0.15);
+    box-shadow: 0 4px 25px #d7acff7e;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.3s ease;
 }
 .project-card:hover {
-  box-shadow: 0 12px 40px rgba(78, 78, 255, 0.3);
+  box-shadow: 0 5px 40px #cc95ff88;
 }
 .project-title {
   font-weight: 700;
@@ -221,7 +224,7 @@ h2 {
   margin-bottom: 1rem;
 }
 .project-links a {
-  color: #4e4eff;
+  color: #bb73ff;
   font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
@@ -229,29 +232,40 @@ h2 {
 }
 .project-links a:hover {
   text-decoration: underline;
-  color: #3636b8;
+  color: #992bff;
 }
 
 /* Contact */
 .contact {
   background-color: #FFFFFF;
-  padding: 3rem 2rem;
+  padding: 0rem 2rem;
   border-radius: 14px;
-  box-shadow: 0 1px 25px rgb(193, 187, 248);
+    box-shadow: 0 4px 25px #d7acff7e;
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
   color: #000000;
   font-size: 1.15rem;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.contact h2 {
+
+  color: #000000;
+  display: block;
 }
 .contact a {
-  color: #4e4eff;
+  color: #bb73ff;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .contact a:hover {
-  color: #3636b8;
+  color: #992bff;
   text-decoration: underline;
 }
 
@@ -269,7 +283,7 @@ h2 {
   cursor: pointer;
   display: none;
   z-index: 1500;
-  box-shadow: 0 6px 18px rgba(78, 78, 255, 0.6);
+    box-shadow: 0 4px 25px #d7acff7e;
   transition: background-color 0.3s ease;
 }
 #back-to-top:hover {
@@ -281,10 +295,15 @@ h2 {
   .hero {
     flex-direction: column;
     min-height: auto;
-    padding: 4rem 1rem 6rem;
+    padding: 3rem 3rem 3rem;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
   }
   .hero-text h1 {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
+  }
+   .hero-text p {
+    font-size: 1.0rem;
   }
   .hero-img {
     width: 140px;
@@ -296,5 +315,80 @@ h2 {
   main {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .about {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1rem 3rem 3rem;
+  }
+  .about h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+   .about p {
+    margin-top: 0.5rem;
+    font-size: 1.0rem;
+    
+  }
+   .skills {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1rem 3rem 3rem;
+  }
+  .skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+  }
+   .skills-grid {
+    margin-top: 0rem;
+    font-size: 1.0rem;
+    
+  }
+  .skills-grid div {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+   .projects {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1rem 3rem 3rem;
+  }
+  .projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+  }
+  .project-card p{
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  .project-card h3{
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+    margin-top: 0;
+  }
+  .contact p{
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  .navbar{
+justify-content: center;
+
+    padding: 0.5rem 1rem;  
+  }
+  .navbar div{
+    display: none;
+  }
+  .navbar ul li a{
+    font-size: 0.9rem;
+  }
+  .navbar.scrolled{
+        justify-content: center;
+
+    padding: 0.5rem 1rem;
   }
 }

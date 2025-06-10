@@ -6,7 +6,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/src/styles/global.css" />
-    <title>Astro Basics</title>
+    <title>Antonio Jesús Blanco Guillen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
@@ -14,16 +14,54 @@
 	<body>
      <header>
       <nav class="navbar">
-        <!-- <div class="logo">Antonio Jesus Blanco</div>
+        <div class="logo">Antonio Jesus Blanco</div>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
-        </ul> -->
+        </ul>
       </nav>
     </header>
 		<slot />
+<svg
+  viewBox="0 0 1440 1024"
+  xmlns="http://www.w3.org/2000/svg"
+  style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"
+>
+  <rect width="1440" height="1024" fill="#f9f9fb"/>
+
+  <!-- Capa de fondo con formas suaves y balanceadas -->
+  <ellipse cx="0" cy="220" rx="420" ry="380" fill="url(#grad1)" opacity="0.35"/>
+  <circle cx="1600" cy="980" r="360" fill="url(#grad2)" opacity="0.3"/>
+  <circle cx="720" cy="500" r="500" fill="url(#grad3)" opacity="0.26"/>
+  <circle cx="1640" cy="180" r="280"  fill="url(#grad4)" opacity="0.2"/>
+  <circle cx="120" cy="830" r="300" fill="url(#grad5)" opacity="0.36"/>
+
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#4e4eff" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="grad2" cx="50%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#ff6ec7" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="grad3" cx="50%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#a96dff" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="grad4" cx="50%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#00c9a7" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+     <radialGradient id="grad5" cx="50%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="#abc9F7" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+</svg>
+
         <script src="/src/scripts/global.js"></script>
 
 	</body>
@@ -35,6 +73,6 @@
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		height: 80%;
 	}
 </style>
