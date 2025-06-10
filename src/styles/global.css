@@ -17,15 +17,16 @@ html, body {
 .navbar {
   position: fixed;
   top: 0; left: 0; width: 100%;
-  background: transparent;
-  display: flex; justify-content: space-around; align-items: center;
-  padding: 1.3rem 5rem;
+  background-color: #ffffff00;
+  display: flex; justify-content: center; align-items: center;
+  padding: 0.8rem 1rem;
   z-index: 1000;
-  transition: background-color 0.2s ease, padding 0.2s ease, box-shadow 0.2s ease;
-  opacity: 0.6;
+  transition: background-color 0.3s ease, padding 0.2s ease, box-shadow 0.2s ease;
+  opacity: 1;
 }
+
 .navbar.scrolled {
-  background-color: #1f1f3f;
+  background-color: #e5e0ff;
   padding: 0.8rem 5rem;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
@@ -41,7 +42,7 @@ html, body {
   margin: 0; padding: 0;
 }
 .navbar a {
-  color: #ddd;
+  color: #000000;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -75,7 +76,7 @@ main {
     background-color: #FFFFFF;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    box-shadow: 0 4px 25px #d7acff7e;
+    box-shadow: 0 4px 25px #e5e0ffe0;
     max-height: 800px;
     margin-bottom: 4rem;
 }
@@ -96,9 +97,9 @@ main {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #d7acff7e;
+  border: 2px solid #e5e0ff7e;
   transition: transform 0.5s ease;
-  box-shadow: 0 1px 20px #d7acff7e;
+  box-shadow: 0 1px 20px #e5e0ffe0;
 }
 .hero-img:hover {
   transform: scale(1.15);
@@ -145,7 +146,7 @@ h2 {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-    box-shadow: 0 4px 25px #d7acff7e;
+    box-shadow: 0 4px 25px #e5e0ffe0;
   color: #000000;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -156,7 +157,7 @@ h2 {
   background: #FFFFFF;
   padding: 3rem 2rem;
   border-radius: 14px;
-    box-shadow: 0 4px 25px #d7acff7e;
+    box-shadow: 0 4px 25px #e5e0ffe0;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -167,7 +168,7 @@ h2 {
   gap: 1.2rem;
 }
 .skills-grid div {
-  background: #af5bfd7e;
+  background: #ac9cffe0;
   color: white;
   padding: 1rem 0;
   border-radius: 12px;
@@ -176,12 +177,12 @@ h2 {
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  border: #c48df894 solid 1px;
-  box-shadow: 0 0px 4px #8400ff;
+  border: #9883ff94 solid 1px;
+  box-shadow: 0 0px 4px #e5e0ffe0;
   cursor: default;
 }
 .skills-grid div:hover {
-  background-color: #8400ff7e;
+  background-color: #8269ff;
 }
 
 /* Projects */
@@ -189,7 +190,7 @@ h2 {
   padding: 3rem 2rem;
   background-color: #ffffff;
   border-radius: 14px;
-    box-shadow: 0 4px 25px #d7acff7e;
+    box-shadow: 0 4px 25px #e5e0ffe0;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -203,13 +204,13 @@ h2 {
   background: #FFFFFF;
   padding: 1.8rem;
   border-radius: 14px;
-    box-shadow: 0 4px 25px #d7acff7e;
+    box-shadow: 0 4px 25px #e5e0ffe0;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.3s ease;
 }
 .project-card:hover {
-  box-shadow: 0 5px 40px #cc95ff88;
+  box-shadow: 0 5px 40px #e5e0ffe0;
 }
 .project-title {
   font-weight: 700;
@@ -224,7 +225,7 @@ h2 {
   margin-bottom: 1rem;
 }
 .project-links a {
-  color: #bb73ff;
+  color: #937effe0;
   font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
@@ -232,7 +233,7 @@ h2 {
 }
 .project-links a:hover {
   text-decoration: underline;
-  color: #992bff;
+  color: #5e3dff;
 }
 
 /* Contact */
@@ -240,7 +241,7 @@ h2 {
   background-color: #FFFFFF;
   padding: 0rem 2rem;
   border-radius: 14px;
-    box-shadow: 0 4px 25px #d7acff7e;
+    box-shadow: 0 4px 25px #e5e0ffe0;
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
@@ -259,13 +260,13 @@ display: flex;
   display: block;
 }
 .contact a {
-  color: #bb73ff;
+  color: #937effe0;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .contact a:hover {
-  color: #992bff;
+  color: #5e3dff;
   text-decoration: underline;
 }
 
@@ -283,7 +284,7 @@ display: flex;
   cursor: pointer;
   display: none;
   z-index: 1500;
-    box-shadow: 0 4px 25px #d7acff7e;
+    box-shadow: 0 4px 25px #e5e0ffe0;
   transition: background-color 0.3s ease;
 }
 #back-to-top:hover {
@@ -296,8 +297,7 @@ display: flex;
     flex-direction: column;
     min-height: auto;
     padding: 3rem 3rem 3rem;
-    margin-bottom: 0;
-    padding-bottom: 4rem;
+    margin-bottom: 4rem;
   }
   .hero-text h1 {
     font-size: 1.5rem;
@@ -387,8 +387,7 @@ justify-content: center;
     font-size: 0.9rem;
   }
   .navbar.scrolled{
-        justify-content: center;
-
+    justify-content: center;
     padding: 0.5rem 1rem;
   }
 }
