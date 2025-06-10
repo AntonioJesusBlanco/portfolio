@@ -1,72 +1,68 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
+  <section id="inicio" class="hero">
+    <div class="hero-bg" style="background: linear-gradient(to right,#f9f9fb 20%,#ffffff57  ,#f9f9fb 80%)"></div>
+    <img src="/src/assets/imagenJesus.JPG" alt="Antonio Jesús Blanco Guillen" class="hero-img" />
+    <div class="hero-text">
+      <h1>Antonio Jesús Blanco Guillén</h1>
+      <p >Web Developer </p><p> HTML | CSS | Javascript | Node.js | Express | Angular | Astro | Git | Github </p>
+    </div> 
+  </section>
 
-<section id="inicio" class="hero">
-  <img src="/perfil.jpg" alt="Foto de Jesús" class="hero-img" />
-  <div class="hero-text">
-    <h1>Jesús</h1>
-    <p>Desarrollador web apasionado por crear experiencias digitales modernas, rápidas y accesibles.</p>
-  </div>
-</section>
-<section id="about" class="about">
-  <h2>Sobre mí</h2>
-  <p>
-    Soy un desarrollador web apasionado por crear sitios rápidos, accesibles y bien diseñados. Me encanta aprender nuevas tecnologías y aplicarlas a proyectos reales.
-  </p>
-</section>
-<!-- Habilidades -->
-<section id="skills" class="skills">
-  <h2>Habilidades</h2>
-  <div class="skills-grid">
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
-    <div>Astro</div>
-    <div>React</div>
-    <div>Git</div>
-    <div>Tailwind</div>
-    <div>Node.js</div>
-  </div>
-</section>
-
-<!-- Proyectos -->
-<section id="projects" class="projects">
-  <h2>Proyectos</h2>
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Portfolio</h3>
-      <p>Mi portfolio personal hecho con Astro, HTML y CSS.</p>
-      <a href="https://github.com/tuusuario/portfolio" target="_blank">Ver código</a>
+  <section id="about" class="about">
+    <h2>Sobre mí</h2>
+    <p>Soy <strong>Desarrollador Web</strong> junior con conocimientos en diversos lenguajes, me encuentro estudiando <strong>Desarrollo de Aplicaciones Web</strong> en el IES Punta del Verde, actualmente me encuentro en busqueda de empleo para empresas de practicas.</p>
+    <p>Anteriormente estudié un grado superior de <strong>Sonido para Audiovisuales y Espectáculos</strong>, lo que me ha permitido saber trabajar bajo presion y con un tiempo limite establecido.</p>
+    <p>Soy muy organizado y resolutivo, y se adaptarme muy bien a los tiempos, me gusta trabajar en equipo trabajando con <strong>herramientas de control de versiones.</strong></p>
+  </section>
+  <div>
+    <section id="skills" class="skills" >
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"><span>HTML</span></div>
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"><span>CSS</span></div>
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JS"><span>JS</span></div>
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"><span>Node.js</span></div>
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express"><span>Express</span></div>
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular"><span>Angular</span></div>
+      <div><img class="icono-inline" src="https://avatars.githubusercontent.com/u/59550088?s=280&v=4" alt="Astro"><span>Astro</span></div>
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git"><span>Git</span></div>
+      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"><span>GitHub</span></div>
     </div>
-    <div class="project-card">
-      <h3>App de tareas</h3>
-      <p>Una aplicación simple para gestionar tareas, hecha con React y Firebase.</p>
-      <a href="https://github.com/tuusuario/todo-app" target="_blank">Ver código</a>
-    </div>
+
+    </section>
   </div>
-</section>
+  <section id="projects" class="projects">
+    <h2>Proyectos</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3 class="project-title">TheOfficeAPI</h3>
+        <p class="project-description" style="margin-bottom: 0; margin-top: 0.7rem;">
+          API dedicada sobre los personajes de la seria The Office (US/UK).
+        </p>
+        <h4 style="margin-bottom: 0.3rem; margin-top: 1.7rem;">Lenguajes utilizados</h4>
+        <p style="margin-top: 0.3rem;" class="project-description">
+          HTML | CSS | JavaScript | Angular | Node.js | Express
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/AntonioJesusBlanco/theOfficeAPI" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://theofficeapi-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<!-- Contacto -->
-<section id="contact" class="contact">
-  <h2>Contacto</h2>
-  <p>Puedes escribirme a <a href="mailto:tucorreo@gmail.com">tucorreo@gmail.com</a> o encontrarme en redes:</p>
-  <ul class="social-links">
-    <li><a href="https://github.com/tuusuario" target="_blank">GitHub</a></li>
-    <li><a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></li>
-  </ul>
-</section>
+  <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:antoniojesusblanco20@gmail.com">antoniojesusblanco20@gmail.com</a></p>
+    <p>Github: <a href="https://github.com/AntonioJesusBlanco/theOfficeAPI">Github</a></p>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/antonio-jes%C3%BAs-blanco-guillen-27297a185/">Linkedin</a></p>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2025 Jesús – Todos los derechos reservados.</p>
-</footer>
-
-
+    
+  </section>
+  <button id="back-to-top" title="Volver arriba" aria-label="Volver arriba">↑</button>
 
 </Layout>
