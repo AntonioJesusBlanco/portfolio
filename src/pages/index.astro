@@ -4,21 +4,85 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
   <section id="inicio" class="hero">
-    <div class="hero-bg" style="background: linear-gradient(to right,#f9f9fb 20%,#ffffff57  ,#f9f9fb 80%)"></div>
+    <div class="hero-bg"></div>
     <img src="/assets/imagenJesus.JPG" alt="Antonio Jesús Blanco Guillen" class="hero-img" />
     <div class="hero-text">
       <h1>Antonio Jesús Blanco Guillén</h1>
-      <p >Web Developer </p><p> HTML | CSS | Javascript | Node.js | Express | Angular | Astro | Git | Github </p>
+<div class="contact-links">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Gmail" width="18" height="18" />
+
+    <a href="mailto:antoniojesusblanco20@gmail.com">antoniojesusblanco20@gmail.com</a>
+    </div>
+    <div class="contact-links">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" width="18" height="18" />
+
+    <a href="https://github.com/AntonioJesusBlanco">Github</a>
+   </div> <div class="contact-links"> <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" width="18" height="18" />
+
+<a href="https://www.linkedin.com/in/antonio-jes%C3%BAs-blanco-guillen-27297a185/">Linkedin</a>
+</div>
     </div> 
   </section>
-
   <section id="about" class="about">
     <h2>Sobre mí</h2>
-    <p>Soy <strong>Desarrollador Web</strong> junior con conocimientos en diversos lenguajes, me encuentro estudiando <strong>Desarrollo de Aplicaciones Web</strong> en el IES Punta del Verde, actualmente me encuentro en busqueda de empleo para empresas de practicas.</p>
-    <p>Anteriormente estudié un grado superior de <strong>Sonido para Audiovisuales y Espectáculos</strong>, lo que me ha permitido saber trabajar bajo presion y con un tiempo limite establecido.</p>
-    <p>Soy muy organizado y resolutivo, y se adaptarme muy bien a los tiempos, me gusta trabajar en equipo trabajando con <strong>herramientas de control de versiones.</strong></p>
-  </section>
+    <p>Soy <strong>Desarrollador Web</strong> junior con conocimientos en diversos lenguajes. Actualmente estudio <strong>Desarrollo de Aplicaciones Web</strong> en el IES Punta del Verde y me encuentro en búsqueda de empleo en empresas donde pueda realizar prácticas.</p> <p>Anteriormente cursé un grado superior de <strong>Sonido para Audiovisuales y Espectáculos</strong>, lo que me ha permitido aprender a trabajar bajo presión y con plazos establecidos.</p> <p>Soy una persona organizada y resolutiva, me adapto fácilmente a los tiempos y disfruto trabajando en equipo utilizando <strong>herramientas de control de versiones</strong>.</p> </section>
   <div>
+
+    
+
+
+
+    <section id="projects" class="projects">
+    <h2>Proyectos</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3 class="project-title">TheOfficeAPI</h3>
+        <p class="project-description" style="margin-bottom: 0; margin-top: 0.7rem;">
+          API dedicada sobre los personajes de la serie The Office (US/UK).
+        </p>
+        
+        <img src="/assets/CapturaApi.PNG" alt="captura API" class="project-image" />
+        <h4 style="margin-bottom: 0.3rem; margin-top: 1.7rem;">Lenguajes utilizados</h4>
+
+        <p style="margin-top: 0.3rem;" class="project-description">
+          HTML | CSS | JavaScript | Angular | Node.js | Express
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/AntonioJesusBlanco/theOfficeAPI" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://theofficeapi-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  </div>
+  
+  <section id="certifications" class="certifications">
+    <h2>Formacion profesional</h2>
+    <div class="certifications-grid">
+      <article class="certifications-card">
+        <h3 class="certifications-title">Desarrollo de Aplicaciones Web</h3>
+        <h4>2022 - Actualmente</h4>
+        <p style="margin-top: 0.3rem;" class="project-description">
+          Grado superior de Desarrollo de Aplicaciones Web impartidas en el IES Punta Del Verde, en el que he adquirido habilidades para desarrollar aplicaciones web en el ambito de cliente y de servidor </a>.
+        </p>   
+      </article>
+      <article class="certifications-card">
+        <h3 class="certifications-title">Sonido para Audiovisuales y espectaculos</h3>
+        <h4>2020 - 2022</h4>
+        <p style="margin-top: 0.3rem;" class="project-description">
+          Grado superior de Sonido para Audiovisuales y espectaculos impartidas en Cesur, en el que aprendi a trabajar en montajes para eventos, adquiriendo habilidades para trabajar bajo presion </a>.
+        </p>   
+      </article>
+      <article class="certifications-card">
+        <h3 class="certifications-title">Video Disc-Jockey y sonido</h3>
+        <h4>2018 - 2020</h4>
+        <p style="margin-top: 0.3rem;" class="project-description">
+          Grado medio de Video Disc-Jockey y sonido impartidas en Cesur, en el que he adquirido habilidades para diseñar y adquirir conocimientos sobre la imagen. </a>
+        </p>   
+      </article>
+    </div>
+  </section>
+
     <section id="skills" class="skills" >
       <h2>Habilidades</h2>
       <div class="skills-grid">
@@ -34,35 +98,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     </section>
-  </div>
-  <section id="projects" class="projects">
-    <h2>Proyectos</h2>
-    <div class="projects-grid">
-      <article class="project-card">
-        <h3 class="project-title">TheOfficeAPI</h3>
-        <p class="project-description" style="margin-bottom: 0; margin-top: 0.7rem;">
-          API dedicada sobre los personajes de la seria The Office (US/UK).
-        </p>
-        <h4 style="margin-bottom: 0.3rem; margin-top: 1.7rem;">Lenguajes utilizados</h4>
-        <p style="margin-top: 0.3rem;" class="project-description">
-          HTML | CSS | JavaScript | Angular | Node.js | Express
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/AntonioJesusBlanco/theOfficeAPI" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://theofficeapi-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:antoniojesusblanco20@gmail.com">antoniojesusblanco20@gmail.com</a></p>
-    <p>Github: <a href="https://github.com/AntonioJesusBlanco/theOfficeAPI">Github</a></p>
-    <p>Linkedin: <a href="https://www.linkedin.com/in/antonio-jes%C3%BAs-blanco-guillen-27297a185/">Linkedin</a></p>
-
-    
-  </section>
+  
   <button id="back-to-top" title="Volver arriba" aria-label="Volver arriba">↑</button>
 
 </Layout>
