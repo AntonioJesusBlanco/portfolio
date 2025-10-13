@@ -15,7 +15,10 @@ body {
   background-color: #0a0a23;  /* azul muy oscuro */
   color: #e1e1e1;             /* gris claro para texto */
 }
-
+.works-card.dark-mode-section article{
+  border: #7e66ff solid 1px;
+  box-shadow: 0 0 6px #7e66ff88;
+}
 section.dark-mode-section,section.dark-mode-section#inicio,
 .project-card.dark-mode-section,.works-card.dark-mode-section {
   background-color: #1a1033f8;  /* morado oscuro translúcido */
@@ -54,10 +57,10 @@ section.dark-mode-section .project-card {
 .skills-grid div.dark-mode-skill:hover {
   background-color: #30226d; /* morado claro */
 }
-section.dark-mode-section .project-card p, section.dark-mode-section .certifications-card p, section.dark-mode-section p a, .works-card.dark-mode.section p  {
+section.dark-mode-section .project-card p, section.dark-mode-section .certifications-card p, section.dark-mode-section p a, .works-card.dark-mode-section p  {
   color: #d9cdff !important;
 }
-.works-card.dark-mode.section h4{
+.works-card.dark-mode-section h4{
   color: #e3b8ff !important;
 }
 section.dark-mode-section .certifications-card h4, section.dark-mode-section#contact p {
