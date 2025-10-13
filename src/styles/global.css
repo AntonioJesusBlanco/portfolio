@@ -17,7 +17,7 @@ body {
 }
 
 section.dark-mode-section,section.dark-mode-section#inicio,
-.project-card.dark-mode-section, .works-card.dark-mode-section {
+.project-card.dark-mode-section,.works-card.dark-mode-section {
   background-color: #1a1033f8;  /* morado oscuro translúcido */
   box-shadow: 1px 1px 10px rgba(127, 90, 255, 0.3);
   color: #f5f5f5;
@@ -54,7 +54,7 @@ section.dark-mode-section .project-card {
 .skills-grid div.dark-mode-skill:hover {
   background-color: #30226d; /* morado claro */
 }
-section.dark-mode-section .project-card p, section.dark-mode-section .certifications-card p, section.dark-mode-section p a {
+section.dark-mode-section .project-card p, section.dark-mode-section .certifications-card p, section.dark-mode-section p a, .works-card p {
   color: #d9cdff;
 }
 section.dark-mode-section .certifications-card h4, section.dark-mode-section#contact p {
