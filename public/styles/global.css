@@ -15,7 +15,10 @@ body {
   background-color: #0a0a23;  /* azul muy oscuro */
   color: #e1e1e1;             /* gris claro para texto */
 }
-
+.works-card.dark-mode-section article{
+  border: #7e66ff solid 1px;
+  box-shadow: 0 0 6px #7e66ff88;
+}
 section.dark-mode-section,section.dark-mode-section#inicio,
 .project-card.dark-mode-section,.works-card.dark-mode-section {
   background-color: #1a1033f8;  /* morado oscuro translúcido */
