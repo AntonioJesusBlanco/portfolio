@@ -387,8 +387,7 @@ h2 {
 
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .works-card {
   padding: 1.8rem;
@@ -416,7 +415,10 @@ h2 {
 .works-card p{
   color: #1f003f;
 }
-
+.works-card,.works-card{
+  border: #7700ff solid 1px;
+  box-shadow: 0 0 4px #420099;
+}
 /* Projects */
 .certifications {
   padding: 3rem 2rem;
@@ -477,7 +479,6 @@ border: #7700ff solid 1px;
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
   gap: 1rem;
 }
 .project-card {
@@ -659,6 +660,40 @@ article:hover{
     margin-top: 0;
     font-size: 1.2rem;
   }
+
+  
+   .works {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1rem 3rem 3rem;
+  }
+  .works h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+  }
+  .works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+  gap: 1rem;
+}
+  .works-card{
+    padding: 1rem 1.5rem 0rem 2rem;
+  }
+  .works-card p{
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+  .works-card h3{
+    margin-bottom: 0rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .works-card h4{
+    margin-bottom: 0rem;
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+
    .certifications {
     flex-direction: column;
     min-height: auto;
