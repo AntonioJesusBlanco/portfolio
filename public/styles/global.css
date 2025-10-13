@@ -17,7 +17,7 @@ body {
 }
 
 section.dark-mode-section,section.dark-mode-section#inicio,
-.project-card.dark-mode-section,.works-card.dark-mode-section, .works-card.dark-mode-section p {
+.project-card.dark-mode-section,.works-card.dark-mode-section, .works-card.dark-mode-section .works-description {
   background-color: #1a1033f8;  /* morado oscuro translúcido */
   box-shadow: 1px 1px 10px rgba(127, 90, 255, 0.3);
   color: #f5f5f5;
