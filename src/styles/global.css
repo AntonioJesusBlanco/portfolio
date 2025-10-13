@@ -415,7 +415,10 @@ h2 {
 .works-card p{
   color: #1f003f;
 }
-
+.works-card,.works-card{
+  border: #7700ff solid 1px;
+  box-shadow: 0 0 4px #420099;
+}
 /* Projects */
 .certifications {
   padding: 3rem 2rem;
@@ -476,7 +479,6 @@ border: #7700ff solid 1px;
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
   gap: 1rem;
 }
 .project-card {
