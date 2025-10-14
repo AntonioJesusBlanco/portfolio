@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     descripciones.forEach(descripcion => {
       descripcion.classList.toggle('dark-mode-section');
     });
+    let experiencia= Array.from(document.querySelectorAll(".works-card"));
+    experiencia.forEach(trabajo => {
+      trabajo.classList.toggle('dark-mode-section');
+    });
      let skills= Array.from(document.querySelectorAll(".skills-grid div"));
     skills.forEach(skill => {
       skill.classList.toggle('dark-mode-skill');
