@@ -1,176 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Works from '../components/Works.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Certifications from '../components/Certifications.astro';
+import Skills from '../components/Skills.astro';
+import BackToTop from '../components/BackToTop.astro';
 ---
 
 <Layout>
-  <section id="inicio" class="hero">
-    <div class="hero-bg"></div>
-    <img src="/assets/imagenJesus.JPG" alt="Antonio Jesús Blanco Guillen" class="hero-img" />
-    <div class="hero-text">
-      <h1>Antonio Jesús Blanco Guillén</h1>
-<div class="contact-links">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Gmail" width="18" height="18" />
-
-    <a href="mailto:antoniojesusblanco20@gmail.com">antoniojesusblanco20@gmail.com</a>
-    </div>
-    <div class="contact-links">
-    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" width="18" height="18" />
-
-    <a href="https://github.com/AntonioJesusBlanco">Github</a>
-   </div> <div class="contact-links"> <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" width="18" height="18" />
-
-<a href="https://www.linkedin.com/in/antonio-jes%C3%BAs-blanco-guillen-27297a185/">Linkedin</a>
-</div>
-
-
-    </div> 
-  </section>
-
-
-<section id="works" class="works">
-    <h2>Experiencia laboral</h2>
-    <div class="works-grid">
-      <article class="works-card">
-        <h3 class="works-title">Desarrollador web - CICA (Centro informatico Cientifico de Andalucia)</h3>
-        <h4>Octubre 2025 - Diciembre 2025</h4>
-        <p style="margin-top: 0.3rem;" class="works-description">
-Prácticas realizadas en el CICA, donde he llevado a cabo la creación de un anuario en el que se recoge información relevante sobre el centro y sus actividades durante el año 2025. En dicho anuario se incluyen los servicios de la supercomputadora Hércules, los servicios de Hosting y Housing, así como la Red RICA.
-<br>
-Además, he realizado tareas de monitorización de la supercomputadora Hércules mediante sistemas de monitorización como Zabbix y MobaXTerm, y he desarrollado video-tutoriales sobre el uso de MobaXTerm, el funcionamiento de las visitas al centro y la plataforma Open OnDemand.      
-</article>
-<article class="works-card">
-        <h3 class="works-title">Desarrollador web - TRS Staffing Solutions (Fujitsu)</h3>
-        <h4>Enero 2026 - Actualmente</h4>
-        <p style="margin-top: 0.3rem;" class="works-description">
-Prestación de servicios para Fujitsu en las instalaciones del CICA, participando en la finalización del desarrollo de la aplicación web del anuario y en el inicio de la implementación de mejoras en la aplicación web principal del CICA. Asimismo, se realizó el inventariado de diversos equipos tecnológicos en las instalaciones del centro.
-</article>
-    </div>
-  </section>
-
-
-
-
-  <section id="about" class="about">
-    <h2>Sobre mí</h2>
-<p>
-  Soy <strong>Desarrollador Web</strong> junior con conocimientos en distintos lenguajes de programación y frameworks. He finalizado mis estudios en <strong>Desarrollo de Aplicaciones Web</strong> en el IES Punta del Verde, donde realicé el periodo de prácticas y el proyecto de fin de grado (TFG).
-</p>
-
-<p>
-  Anteriormente cursé el grado superior de <strong>Sonido para Audiovisuales y Espectáculos</strong>, lo que me ha permitido desarrollar habilidades para trabajar bajo presión y cumplir plazos establecidos.
-</p>
-
-<p>
-  Me considero una persona organizada y resolutiva, con facilidad de adaptación y orientación al trabajo en equipo, utilizando <strong>herramientas de control de versiones</strong>.
-</p>  <div>
-
-    
-
-
-    <section id="projects" class="projects">
-    <h2>Proyectos</h2>
-    <div class="projects-grid">
-      <article class="project-card">
-        <h3 class="project-title">Analizador Web</h3>
-        <p class="project-description" style="margin-bottom: 0; margin-top: 0.7rem;">
-          Panel de control de rendimiento web desarrollado como Proyecto de Fin de Grado (TFG). Mide las Core Web Vitals (FCP, TTFB) y otras métricas de rendimiento, almacenando todos los datos, incluidos los recursos y los tiempos de carga, en una base de datos para su seguimiento y análisis.
-        </p>
-        
-        <img src="/assets/CapturaTfg.PNG" alt="captura API TFG" class="project-image" />
-        <h4 style="margin-bottom: 0.3rem; margin-top: 1.7rem;">Lenguajes utilizados</h4>
-
-        <p style="margin-top: 0.3rem;" class="project-description">
-          HTML | CSS | JavaScript | Astro | Node.js | Express | Puppeteer | Web Vitals | Chart.js | PostgreSQL
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/AntonioJesusBlanco/analizadorWeb" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://analizador-web.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-        </div>
-      </article>
-
-
-      <article class="project-card">
-        <h3 class="project-title">TheOfficeAPI</h3>
-        <p class="project-description" style="margin-bottom: 0; margin-top: 0.7rem;">
-          API realizada con Angular y Node dedicada sobre los personajes de la serie The Office (US/UK).
-        </p>
-        
-        <img src="/assets/CapturaApi.PNG" alt="captura API The office" class="project-image" />
-        <h4 style="margin-bottom: 0.3rem; margin-top: 1.7rem;">Lenguajes utilizados</h4>
-
-        <p style="margin-top: 0.3rem;" class="project-description">
-          HTML | CSS | JavaScript | Angular | Node.js | Express
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/AntonioJesusBlanco/theOfficeAPI" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://theofficeapi-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-        </div>
-      </article>
-      <article class="project-card">
-        <h3 class="project-title">CryptoGraph</h3>
-        <p class="project-description" style="margin-bottom: 0; margin-top: 0.7rem;">
-          Aplicación web realizada en React que muestra en tiempo real con gráficos la evolución de los precios de las principales criptomonedas en distintos periodos.
-        </p>
-        
-        <img src="/assets/CapturaCrypto.PNG" alt="captura API" class="project-image" />
-        <h4 style="margin-bottom: 0.3rem; margin-top: 1.7rem;">Lenguajes utilizados</h4>
-
-        <p style="margin-top: 0.3rem;" class="project-description">
-          HTML | CSS | JavaScript | React
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/AntonioJesusBlanco/CryptoGraph" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://cryptographics.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-        </div>
-      </article>
-    </div>
-  </section>
-  </div>
-  
-  <section id="certifications" class="certifications">
-    <h2>Formación profesional</h2>
-    <div class="certifications-grid">
-      <article class="certifications-card">
-        <h3 class="certifications-title">Desarrollo de Aplicaciones Web</h3>
-        <h4>2022 - 2025</h4>
-        <p style="margin-top: 0.3rem;" class="project-description">
-Grado Superior de Desarrollo de Aplicaciones Web impartido en el IES Punta del Verde, en el que he adquirido habilidades para desarrollar aplicaciones web tanto del lado del cliente como del servidor.        </p>   
-      </article>
-      <article class="certifications-card">
-        <h3 class="certifications-title">Sonido para Audiovisuales y Espectáculos</h3>
-        <h4>2020 - 2022</h4>
-        <p style="margin-top: 0.3rem;" class="project-description">
-          Grado Superior en Sonido para Audiovisuales y Espectáculos impartido en Cesur, donde aprendí a trabajar en montajes para eventos, adquiriendo habilidades para trabajar bajo presión.
-        </p>   
-      </article>
-      <article class="certifications-card">
-        <h3 class="certifications-title">Vídeo Disc-Jockey y Sonido</h3>
-        <h4>2018 - 2020</h4>
-        <p style="margin-top: 0.3rem;" class="project-description">
-          Grado medio de Vídeo Disc-Jockey y Sonido impartido en Cesur, en el que he adquirido habilidades para diseñar y desarrollar conocimientos sobre la imagen.
-        </p>   
-      </article>
-    </div>
-  </section>
-
-    <section id="skills" class="skills" >
-      <h2>Habilidades</h2>
-      <div class="skills-grid">
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"><span>HTML</span></div>
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"><span>CSS</span></div>
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JS"><span>JS</span></div>
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"><span>Node.js</span></div>
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express"><span>Express</span></div>
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular"><span>Angular</span></div>
-      <div><img class="icono-inline" src="https://avatars.githubusercontent.com/u/59550088?s=280&v=4" alt="Astro"><span>Astro</span></div>
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git"><span>Git</span></div>
-      <div><img class="icono-inline" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"><span>GitHub</span></div>
-      <div><img class="icono-inline" src="https://www.svgrepo.com/show/331370/docker.svg" alt="Docker"><span>Docker</span></div>
-
-    </div>
-
-    </section>
-  
-  <button id="back-to-top" title="Volver arriba" aria-label="Volver arriba">↑</button>
-
+  <main>
+    <Hero />
+    <Works />
+    <About />
+    <Projects />
+    <Certifications />
+    <Skills />
+    <BackToTop />
+  </main>
 </Layout>

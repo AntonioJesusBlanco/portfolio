@@ -1,0 +1,58 @@
+---
+---
+
+<section id="inicio" class="hero">
+  <img src="/assets/imagenJesus.JPG" alt="Antonio Jesús Blanco Guillen" class="hero-img" />
+  <div class="hero-text">
+    <h1>Antonio Jesús Blanco Guillén</h1>
+    <p>Desarrollador Full Stack | Administrador de sistemas</p>
+    <div class="hero-links">
+      <a href="mailto:antoniojesusblanco20@gmail.com" class="contact-link" title="Email">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Gmail" width="20" height="20" />
+      </a>
+      <a href="https://github.com/AntonioJesusBlanco" class="contact-link" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" width="20" height="20" />
+      </a>
+      <a href="https://www.linkedin.com/in/antonio-jes%C3%BAs-blanco-guillen-27297a185/" class="contact-link" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" width="20" height="20" />
+      </a>
+    </div>
+  </div> 
+</section>
+
+<style>
+  .hero-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f8b0ff 0%, #7693ff 100%);
+    color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 1.5px 2.5px 4px rgba(143, 171, 217, 0.62);
+  }
+
+  .contact-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 3px 5px 6px rgba(116, 126, 141, 0.5);
+  }
+
+  .contact-link img {
+    filter: brightness(0) invert(1);
+    width: 22px;
+    height: 22px;
+  }
+
+  :global(.dark-mode-fondo) .contact-link {
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  }
+</style>
