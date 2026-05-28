@@ -100,16 +100,6 @@ svg {
   position: relative;
 }
 
-.navbar a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  transition: width 0.3s ease;
-}
 
 .navbar a:hover {
   color: var(--accent);
@@ -260,7 +250,12 @@ h2 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+.dark-mode-fondo .works-card h3, .dark-mode-fondo .works-card h4, .dark-mode-fondo .works-card p,.dark-mode-fondo .about-card p {
+  background: linear-gradient(90deg, #c7b1ff 0%, #9effff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .hero-text p {
   font-size: 1.9rem;
   line-height: 1.7;
@@ -357,31 +352,37 @@ h2 {
 /* Cards */
 .works-card,
 .project-card,
-.certifications-card {
-  padding: 2.5rem;
+.certifications-card,
+.about-card {
+  padding: 0.4rem;
+  padding-left: 0;
   display: flex;
   flex-direction: column;
   background-color: transparent;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-bottom: 1px solid;
+
+border-image: linear-gradient(90deg,  #bb00ff 0%, #3fffe5 100%) 1;
 }
-#work-title-intro {
-background: linear-gradient(135deg, #a96bff8a 0%, #93f8fd73 100%);
+#work-title-intro, #about-title-intro, #project-title-intro {
+font-size: 3.2rem;
+margin-top: 2.5rem;
+margin-bottom: 0.2rem;
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-underline-offset: 4px;
+background: linear-gradient(135deg, #b458ff 0%, #7effee 100%);
   -webkit-background-clip: text;
   background-clip: text;
-
+  font-weight: 200;
   -webkit-text-fill-color: transparent;
   color: transparent;
-}
-.works-card:hover,
-.project-card:hover,
-.certifications-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-4px);
 }
 
 .dark-mode-fondo .works-card,
 .dark-mode-fondo .project-card,
-.dark-mode-fondo .certifications-card {
+.dark-mode-fondo .certifications-card
+.dark-mode-fondo .about-card {
   background: transparent;
 }
 
@@ -416,15 +417,17 @@ background: linear-gradient(135deg, #a96bff8a 0%, #93f8fd73 100%);
 
 .project-description,
 .works-description,
+.about-description,
 .certifications-description {
   flex-grow: 1;
   font-size: 1rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   color: var(--light-text-secondary);
 }
 
 .dark-mode-fondo .project-description,
 .dark-mode-fondo .works-description,
+.dark-mode-fondo .about-description
 .dark-mode-fondo .certifications-description {
   color: #cbd5e1;
 }
@@ -589,7 +592,9 @@ background: linear-gradient(135deg, #a96bff8a 0%, #93f8fd73 100%);
     padding-right: 1rem;
     padding-top: 70px;
   }
-
+  #work-title-intro, #about-title-intro{
+  font-size: 2.8rem;
+  }
   .navbar {
     padding: 0.8rem 1rem;
   }
@@ -668,7 +673,7 @@ background: linear-gradient(135deg, #a96bff8a 0%, #93f8fd73 100%);
     text-align: center;
   }
   .hero-text p {
-    margin-bottom: 150px;
+    margin-bottom: 120px;
   }
 }
 
@@ -682,7 +687,9 @@ background: linear-gradient(135deg, #a96bff8a 0%, #93f8fd73 100%);
   .navbar a {
     font-size: 0.75rem;
   }
-
+  #work-title-intro, #about-title-intro {
+  font-size: 2.4rem;
+  }
   .hero {
     padding: 2rem 1rem;
     gap: 1rem;
@@ -719,7 +726,8 @@ background: linear-gradient(135deg, #a96bff8a 0%, #93f8fd73 100%);
 
   .works-card,
   .certifications-card,
-  .project-card {
+  .project-card,
+  .about-card {
     padding: 1.5rem 1rem;
   }
 }
