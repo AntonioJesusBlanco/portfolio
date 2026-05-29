@@ -8,6 +8,10 @@ const skillDivs = document.querySelectorAll('.skills-grid div');
 const backToTopBtn = document.getElementById('back-to-top');
 const lightGradients = document.querySelector('.light-gradients');
 const darkGradients = document.querySelector('.dark-gradients');
+//Poner de primeras el tema oscuro
+document.addEventListener('DOMContentLoaded', () => {
+  applyDarkMode();
+});
 
 // Verificar tema guardado
 const savedTheme = localStorage.getItem('theme') || 'light';
