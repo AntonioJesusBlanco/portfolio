@@ -12,9 +12,10 @@ const darkGradients = document.querySelector('.dark-gradients');
 
 
 // Verificar tema guardado
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = localStorage.getItem('dark');
 if (savedTheme === 'dark') {
   applyDarkMode();
+
 }
 
 toggleButton.addEventListener('click', () => {
