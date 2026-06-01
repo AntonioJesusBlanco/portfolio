@@ -67,3 +67,61 @@
 </div>
     
 </section>
+<style>
+  
+
+.skills-tech-style {
+  background-clip: text;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.skills-tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.skills {
+  padding: 0;
+  border-radius: 0;
+  max-width: 100%;
+}
+
+
+.tech-tag-skills {
+  background: linear-gradient(135deg, #a96bffb2 0%, #93f8fdc7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid;
+  border-image: linear-gradient(135deg, #9c56ff71 0%, #46f6ff66 100%) 1;
+
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+   .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+
+}
+</style>

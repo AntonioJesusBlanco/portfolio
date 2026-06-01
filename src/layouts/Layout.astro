@@ -1,224 +1,137 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-		<title>Antonio Jesús Blanco Guillen</title>
-		
-	</head>
-	<body>
-		
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Antonio Jesús Blanco Guillen</title>
+  </head>
+  <body>
+    <slot />
 
-		<slot />
+    <svg
+      id="backgroundSvg"
+      viewBox="0 0 1440 1028"
+      xmlns="http://www.w3.org/2000/svg"
+      style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"
+      preserveAspectRatio="xMidYMid slice"
+    >
+      <defs>
+        <!-- 💡 PUNTITOS (pattern único) -->
+        <pattern id="dots" width="15" height="15" patternUnits="userSpaceOnUse">
+          <circle cx="2.5" cy="2.5" r="0.5" fill="white"></circle>
+        </pattern>
 
-		<svg
-  id="backgroundSvg"
-  viewBox="0 0 1440 1028"
-  xmlns="http://www.w3.org/2000/svg"
-  style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"
-  preserveAspectRatio="xMidYMid slice"
->
+        <pattern
+          id="dotsBlack"
+          width="15"
+          height="15"
+          patternUnits="userSpaceOnUse"
+        >
+          <circle cx="2.5" cy="2.5" r="0.5" fill="black"></circle>
+        </pattern>
+      </defs>
 
-  <defs>
+      <g class="light-gradients" style="display:block;">
+        <radialGradient id="darkGrad1" cx="50%" cy="50%" r="70%">
+          <stop offset="0%" stop-color="#7e45f7" stop-opacity="0.20"></stop>
+          <stop offset="70%" stop-color="#0f172a" stop-opacity="0.05"></stop>
+          <stop offset="100%" stop-color="#0f172a" stop-opacity="0"></stop>
+        </radialGradient>
 
+        <radialGradient id="darkGrad2" cx="80%" cy="70%" r="50%">
+          <stop offset="0%" stop-color="#7d3ce6" stop-opacity="0.15"></stop>
+          <stop offset="100%" stop-color="#271347" stop-opacity="0"></stop>
+        </radialGradient>
 
+        <radialGradient id="darkGrad3" cx="50%" cy="50%" r="45%">
+          <stop offset="0%" stop-color="#00dbd7" stop-opacity="0.15"></stop>
+          <stop offset="100%" stop-color="#30271b" stop-opacity="0"></stop>
+        </radialGradient>
 
-    <!-- 💡 PUNTITOS (pattern único) -->
-    <pattern id="dots" width="15" height="15" patternUnits="userSpaceOnUse">
-      <circle cx="2.5" cy="2.5" r="0.5" fill="white"/>
-    </pattern>
+        <circle cx="350" cy="380" r="900" fill="url(#darkGrad1)"></circle>
+        <circle cx="450" cy="550" r="1550" fill="url(#darkGrad2)"></circle>
+        <circle cx="1020" cy="300" r="800" fill="url(#darkGrad3)"></circle>
 
-	<pattern id="dotsBlack" width="15" height="15" patternUnits="userSpaceOnUse">
-      <circle cx="2.5" cy="2.5" r="0.5" fill="black"/>
-    </pattern>
-  </defs>
+        <!-- ⚪ PUNTITOS DARK (BLANCOS) -->
+        <rect width="100%" height="100%" fill="url(#dots)" opacity="0.25"
+        ></rect>
+      </g>
+    </svg>
 
-  <g class="light-gradients" style="display:block;">
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2026 - Antonio Jesús Blanco Guillén</p>
+      </div>
+    </footer>
 
-   <radialGradient id="darkGrad1" cx="50%" cy="50%" r="70%">
-	<stop offset="0%" stop-color="#7e45f7" stop-opacity="0.20"/>
-	<stop offset="70%" stop-color="#0f172a" stop-opacity="0.05"/>
-	<stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
-	</radialGradient>
+    <script>
+      function initTheme() {
+        const allSections = document.querySelectorAll("section");
 
-    <radialGradient id="darkGrad2" cx="80%" cy="70%" r="50%">
-      <stop offset="0%" stop-color="#7d3ce6" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#271347" stop-opacity="0"/>
-    </radialGradient>
+        // Intersection Observer para animación de aparición
+        const observerOptions = {
+          rootMargin: "0px 0px -0px 0px",
+          threshold: 0,
+        };
 
-    <radialGradient id="darkGrad3" cx="50%" cy="50%" r="45%">
-      <stop offset="0%" stop-color="#00dbd7" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#30271b" stop-opacity="0"/>
-    </radialGradient>
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        }, observerOptions);
 
-    <circle cx="350" cy="380" r="900" fill="url(#darkGrad1)"/>
-    <circle cx="450" cy="550" r="1550" fill="url(#darkGrad2)"/>
-    <circle cx="1020" cy="300" r="800" fill="url(#darkGrad3)"/>
+        allSections.forEach((section) => {
+          observer.observe(section);
+        });
+      }
 
-    <!-- ⚪ PUNTITOS DARK (BLANCOS) -->
-    <rect width="100%" height="100%" fill="url(#dots)" opacity="0.25"/>
-  </g>
+      // Ejecutar cuando el DOM esté listo
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initTheme);
+      } else {
+        initTheme();
+      }
+    </script>
+    <style>
+      
 
-</svg>
-	
-		<footer class="footer">
-			<div class="footer-content">
-				<p>© 2026 - Antonio Jesús Blanco Guillén</p>
-			</div>
-		</footer>
+.footer {
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #a96bff1b 0%, #93f8fd1d 100%);
+  border: 1ox solid;
+  border-image: linear-gradient(90deg, #a96bffc0 0%, #93f8fdc0 100%) 1;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+  transition: all 0.3s ease;
+}
 
-		<script>
-			// Tema oscuro/claro toggle
-			function initTheme() {
-				const toggleButton = document.getElementById('toggleMode');
-				const navbar = document.querySelector('.navbar');
-				const body = document.body;
-				const footer = document.querySelector('.footer');
-				const allSections = document.querySelectorAll('section');
-				const skillDivs = document.querySelectorAll('.skills-grid div');
-				const backToTopBtn = document.getElementById('back-to-top');
-				const lightGradients = document.querySelector('.light-gradients') as SVGElement;
-				const darkGradients = document.querySelector('.dark-gradients') as SVGElement;
+.footer p {
+  font-weight: 400;
+  font-size: 1rem;
 
-				// Verificar tema guardado
-				const savedTheme = localStorage.getItem('theme') || 'light';
-				if (savedTheme === 'dark') {
-					applyDarkMode();
-				}
+  color: transparent;
+  background: linear-gradient(135deg, #9d59fc 0%, #93f8fd 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-				// Solo agregar listeners si los elementos existen
-				if (toggleButton) {
-					toggleButton.addEventListener('click', () => {
-						if (body.classList.contains('dark-mode-fondo')) {
-							removeDarkMode();
-							localStorage.setItem('theme', 'light');
-						} else {
-							applyDarkMode();
-							localStorage.setItem('theme', 'dark');
-						}
-					});
-				}
-
-		
- 
-				function applyDarkMode() {
-					body.classList.add('dark-mode-fondo');
-					if (navbar) navbar.classList.add('dark-mode-navbar');
-					if (footer) footer.classList.add('dark-mode-footer');
-					
-					allSections.forEach(section => {
-						section.classList.add('dark-mode-section');
-					});
-					
-					skillDivs.forEach(div => {
-						div.classList.add('dark-mode-skill');
-					});
-					
-					if (backToTopBtn) {
-						backToTopBtn.classList.add('dark-mode-back-to-top');
-					}
-					
-					// Cambiar gradientes del SVG
-					if (lightGradients && darkGradients) {
-						lightGradients.style.display = 'none';
-						darkGradients.style.display = 'block';
-					}
-				}
-
-				function removeDarkMode() {
-					body.classList.remove('dark-mode-fondo');
-					if (navbar) navbar.classList.remove('dark-mode-navbar');
-					if (footer) footer.classList.remove('dark-mode-footer');
-					
-					allSections.forEach(section => {
-						section.classList.remove('dark-mode-section');
-					});
-					
-					skillDivs.forEach(div => {
-						div.classList.remove('dark-mode-skill');
-					});
-					
-					if (backToTopBtn) {
-						backToTopBtn.classList.remove('dark-mode-back-to-top');
-					}
-					
-					// Cambiar gradientes del SVG
-					if (lightGradients && darkGradients) {
-						lightGradients.style.display = 'block';
-						darkGradients.style.display = 'none';
-					}
-				}
-
-				// Scroll behavior para navbar
-				if (navbar) {
-					window.addEventListener('scroll', () => {
-						if (window.scrollY > 50) {
-							navbar.classList.add('scrolled');
-						} else {
-							navbar.classList.remove('scrolled');
-						}
-					});
-				}
-
-				// Back to top button
-				if (backToTopBtn) {
-					window.addEventListener('scroll', () => {
-						if (window.scrollY > 300) {
-							backToTopBtn.style.display = 'flex';
-						} else {
-							backToTopBtn.style.display = 'none';
-						}
-					});
-
-					backToTopBtn.addEventListener('click', () => {
-						window.scrollTo({ top: 0, behavior: 'smooth' });
-					});
-				}
-
-				// Intersection Observer para animación de aparición
-				const observerOptions = {
-					threshold: 0.1,
-					rootMargin: '0px 0px -50px 0px'
-				};
-
-				const observer = new IntersectionObserver((entries) => {
-					entries.forEach(entry => {
-						if (entry.isIntersecting) {
-							entry.target.classList.add('visible');
-						}
-					});
-				}, observerOptions);
-
-				allSections.forEach(section => {
-					observer.observe(section);
-				});
-			}
-
-			// Ejecutar cuando el DOM esté listo
-			if (document.readyState === 'loading') {
-				document.addEventListener('DOMContentLoaded', initTheme);
-			} else {
-				initTheme();
-			}
-		</script>
-		
-	</body>
+    </style>
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

@@ -142,3 +142,86 @@ El resultado es una aplicación web visual e interactiva que permite seguir el m
         </a>
       </div>
     </article>
+
+    <style>
+      .project-tech {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1.2rem 0;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.project-links a,
+.imagenDescargable {
+  color: white;
+  background: linear-gradient(90deg, #a96bff2c 0%, #00708917 100%);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #a96bff58 0%, #93f8fd50 100%) 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-links a:hover {
+  background: var(--accent-light);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 0.7rem;
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #a78bfa7c, #67f2f754) 1;
+}
+
+.tech-tag {
+  background: linear-gradient(135deg, #a96bffb2 0%, #93f8fdc7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #a96bff58 0%, #93f8fd50 100%) 1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
+    </style>
